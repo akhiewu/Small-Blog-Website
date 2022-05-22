@@ -118,16 +118,15 @@ W022 = Warning(
 
 E023 = Error(
     'You have set the SECURE_REFERRER_POLICY setting to an invalid value.',
-    hint='Valid values are: {}.'.format(', '.join(sorted(REFERRER_POLICY_VALUES))),
+    hint=f"Valid values are: {', '.join(sorted(REFERRER_POLICY_VALUES))}.",
     id='security.E023',
 )
+
 
 E024 = Error(
     'You have set the SECURE_CROSS_ORIGIN_OPENER_POLICY setting to an invalid '
     'value.',
-    hint='Valid values are: {}.'.format(
-        ', '.join(sorted(CROSS_ORIGIN_OPENER_POLICY_VALUES)),
-    ),
+    hint=f"Valid values are: {', '.join(sorted(CROSS_ORIGIN_OPENER_POLICY_VALUES))}.",
     id='security.E024',
 )
 
